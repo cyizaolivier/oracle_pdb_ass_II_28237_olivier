@@ -24,7 +24,13 @@ Task 3: OEM Dashboard - Verified the database status and health using the web-ba
 5. Challenges Faced & Solutions
 Challenge: Encountered ORA-00922 (missing/invalid option) when creating users with special characters in the password.
 
-6. Final Project Verification
+Solution: Enclosed the password in double quotes ("Cyizaolivier@123") to ensure Oracle correctly parsed the @ symbol.
+
+Challenge: User conflict errors (ORA-01920) when re-running scripts.
+
+Solution: Used DROP commands to clean the environment before running a fresh "clean sweep" script.
+
+7. Final Project Verification
 - [x] **Correct PDB names used**: Verified the permanent PDB is named `cy_pdb_28237`.
 - [x] **User created inside the PDB**: Confirmed `olivier_plsqlauca_28237` is a local user within the PDB.
 - [x] **Temporary PDB created and deleted**: Completed the full lifecycle (Create → Close → Drop).
@@ -33,8 +39,3 @@ Challenge: Encountered ORA-00922 (missing/invalid option) when creating users wi
 - [x] **README is clear and professional**: Includes the integrity statement, scope, and technical overview.
 - [x] **Deadline respected**: Submission completed before the 11:59 PM cutoff.
 
-Solution: Enclosed the password in double quotes ("Cyizaolivier@123") to ensure Oracle correctly parsed the @ symbol.
-
-Challenge: User conflict errors (ORA-01920) when re-running scripts.
-
-Solution: Used DROP commands to clean the environment before running a fresh "clean sweep" script.
